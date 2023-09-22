@@ -1,0 +1,16 @@
+body{
+    background-color: bisque;
+}
+
+p{
+    background-color: gainsboro;
+    padding: 7px;
+    border: solid 1px;
+    margin: 20px 400px 20px;
+}
+#t2{
+    text-align: center;
+}
+#t3{
+    text-align: right;
+}

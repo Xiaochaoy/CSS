@@ -1,0 +1,23 @@
+#texto{
+    background-color: cornflowerblue;   
+}
+
+table{
+    background-color: bisque;
+    border: solid 6px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+td{
+    padding: 1px 25px;
+    text-align: center;
+    border-left: solid 1px;
+    border-bottom: solid 2px;
+}
+caption{
+    background-color: cornflowerblue;
+    text-align: center;
+    font-size: 17px;
+    margin-left: 150px;
+    margin-right: 150px;
+}

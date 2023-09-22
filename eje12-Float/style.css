@@ -1,0 +1,15 @@
+div{
+    width: 99vw;
+    height: 100vh;
+    margin-left: 2px;
+}
+p{
+    max-width: 39vw;
+    float: left;
+}
+img{
+    width: 60vw;
+    height: 45vh;
+    min-height: 200px;
+    min-width: 350px;
+}

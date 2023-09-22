@@ -1,0 +1,75 @@
+body{
+    background-color: greenyellow;
+}
+#zero{
+    background-color: white;
+    border: solid 15px gainsboro;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    & *{
+        background-color: white;
+        border: solid 5px red;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        position: relative;
+    }
+}
+#uno{
+    height: 200px;
+    width: 200px;
+    top: 6px;
+    left: 6px;
+    & *{
+        border-width: 15px;
+    }
+}
+#dos{
+    height: 150px;
+    width: 150px;
+    top: 10px;
+    left: 10px;
+}
+#tres{
+    height: 100px;
+    width: 100px;
+    top: 11px;
+    left: 11px;
+}
+#cuatro{
+    height: 50px;
+    width: 50px;
+    top: 11px;
+    left: 11px;
+}
+#cinco{
+    border: none;
+    background-color: red;
+    height: 25px;
+    width: 25px;
+    top: 12px;
+    left: 12px;
+}
+#horizontal{
+    height: 200px;
+    width: 222px;
+    border-bottom: solid 2px;
+    position: absolute;
+    top: -65px;
+    left: 22px;
+}
+#vertical{
+    height: 222px;
+    width: 100px;
+    border-right: solid 2px;
+    position: absolute;
+    top: 22px;
+    left: 34px;
+}

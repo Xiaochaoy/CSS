@@ -1,0 +1,12 @@
+div{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 20px;
+    outline: greenyellow dotted 20px;
+}
+div:hover{
+    outline: black dotted 10px;
+}
