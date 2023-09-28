@@ -1,0 +1,34 @@
+/*
+Colors:
+
+Text: 1A1A1A
+Green: #00B172
+White: #FFF
+
+*/
+#cabeza{
+    background-color: blue;
+    width: auto;
+    height: 100px;
+    position: fixed;
+
+}
+body{
+    margin-top: 0px;
+    margin-left: 0px;
+}
+img{
+    width: 98.7vw;
+    height: 99.5vh;
+}
+#sadas{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+#aef{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}

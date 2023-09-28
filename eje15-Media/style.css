@@ -1,0 +1,77 @@
+div{
+    width: auto;
+    margin-bottom: 5px;
+}
+.orange{
+    background-color: orange;
+}
+.yellow{
+    background-color: yellow;
+}
+.blue{
+    background-color: blue;
+}
+.silver{
+    background-color: silver;
+}
+@media (min-width : 320px) {
+    .orange, .silver{
+        height: 50px;
+    }
+    .yellow{
+        height: 80px;
+    }
+    .blue{
+        height: 100px;
+    }
+}
+
+@media (min-width : 768px) {   
+    .orange{
+        height: 50px;
+    }
+    .yellow{
+        height: 150px;
+    }
+    .blue{
+        height: 80px;
+    }
+    .silver{
+        height: 75px;
+        width: 49.5%;
+        float: left;
+    }
+    #a8, #a10{
+        margin-left: 1%;
+    }
+}
+
+@media (min-width : 1024px)  {
+    .orange{
+        height: 70px;
+        width: 49.5%;
+        float: left;
+    }
+    #a2{
+        margin-left: 1%;
+    }
+    .yellow{
+        clear: both;
+        height: 240px;
+    }
+    .blue{
+        height: 180px;
+        width: 32.66%;
+        float: left;
+    }
+    #a5,#a6{
+        margin-left: 1%;
+    }
+    .silver{
+        height: 85px;
+        width: 24.25%;
+    }
+    #a8,#a9, #a10{
+        margin-left: 1%;
+    }
+}
