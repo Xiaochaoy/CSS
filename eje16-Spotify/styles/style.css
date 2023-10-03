@@ -9,6 +9,7 @@ body{margin:0px;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Sego
 a{color: black;&:link{text-decoration: none;}&:hover{color: black;}}
 
 header{
+    /* width: 100%; */
     background-color: var(--white);
     display: flex;
     justify-content: space-between;
@@ -16,45 +17,248 @@ header{
     position: sticky;
     top: 0px;
     & #logo{
+        margin: 1%;
         width: 130px;
         height: 40px;
     }
+    & #link{
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+    }
 }
 .landing{
+    color: var(--white);
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: url(../images/landing.jpg);
     background-size: cover;
-    height: 100vh;
     background-position: center;
-    color: var(--white);
-    text-align: center;
+    height: 100vh;
+}
+.iconos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    & h1{
-        font-size: 2.5em;
+    & h2{
+        text-decoration: underline;
+        text-decoration-color:var(--color);
+        -moz-text-decoration-color:var(--color);
+        text-underline-offset: 0.3em;
+        font-size: 40px;
+}
+    & #trios{
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        font-size: 20px;
+
+        & article{
+            width: 40%;
+            display: flex;  
+            flex-direction: column;
+            align-items: center;
+            margin: 0px 40px;
+
+            & h3{
+                color: var(--color);
+            }
+            & img{
+                width: 100px;
+                height: 100px;
+            }
+
+            & p{
+                width: 230px;
+                text-align: center;
+            }
+        }
     }
 }
+.last{
+    color: var(--white);
+    background-color: var(--color);
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    & #texto{
+        display: flex;
+        flex-direction: column;
+
+        & h2{
+            text-decoration: underline;
+            text-decoration-color: var(--white);
+            -moz-text-decoration-color: var(--white);
+            text-underline-offset: 0.3em;
+}
+    }
+}
+
+
 /* PC */
 @media (width > 768px){
-    header{
-
+    .landing{
+        & h1{
+            font-size: 4em;
+        }
+        & p{
+            font-size: 2em;
+            width: 800px;
+        } 
+    }
+    .last{
+        & section h2{
+            font-size: 2em;
+        }
+        & section article p{
+            width: 235px;
+        }
+        & #iconito{
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-self: center;
+            align-self: center;
+            position: relative;
+            right: 80px;
+        }
+        & #app{
+            height: 500px;
+            width: 270px;
+        }
     }
 }
 /* Table */
-@media (width <= 768px){
+@media (320px < width <= 768px){
     header{
         display: block;
         display: flex;
         flex-direction: column;
+        
+        & #link{
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+            height: 30px;
+        }
+    }
+    .landing{
+        & h1{
+            font-size: 4em;
+        }
+        & p{
+            font-size: 1.5em;
+            width: 600px;
+        } 
+    }
+
+    .iconos{
+        & #trios article{
+            margin: 0px 10px;
+        }
+    }
+
+    .last{
+        font-size: 0.9em;
+        
+        & section article p{
+            width: 235px;
+        }
+        & #iconito{
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-self: center;
+            align-self: center;
+            position: relative;
+            right: 50px;
+        }
+        & #app{
+            height: 300px;
+            width: 170px;
+        }
     }
 }
 
 /* Mobile */
-@media (width <= 320px){
+@media (0px < width <= 320px){
     header{
         display: block;
         display: flex;
         flex-direction: column;
+
+        & #link{
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+            height: 30px;
+        }
+    }
+    .landing{
+        display: flex;
+        align-items: flex-start;
+        padding-top: 50px;
+        & h1{
+            font-size: 1.5em;
+        }
+        & p{
+            font-size: 1em;
+            width: 240px;
+        } 
+    }
+    
+    .iconos{
+        & h2{
+            font-size: 20px;
+        }
+        & #trios{
+            max-width: 320px;
+            overflow-x: scroll;
+            scroll-snap-type: mandatory;
+            
+            & article{
+                scroll-snap-align: center;
+                margin: 0px 100px;
+                
+                & h3{
+                    width: 300px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .last{
+        font-size: 0.2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        & #texto{
+            display: flex;
+            align-items: center;
+
+            & article h3{
+                text-align: center;
+            }
+        }
+        & #iconito{
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-self: center;
+            align-self: center;
+            position: relative;
+            right: 50px;
+        }
+        & #app{
+            height: 300px;
+            width: 170px;
+        }
     }
 }
