@@ -234,6 +234,7 @@ header{
         }
     }
     .last{
+        height: auto;
         font-size: 0.2em;
         display: flex;
         flex-direction: column;
@@ -242,9 +243,11 @@ header{
         & #texto{
             display: flex;
             align-items: center;
+            font-size: 16px;
 
-            & article h3{
+            & article h3, p{
                 text-align: center;
+                width: 200px;
             }
         }
         & #iconito{
@@ -253,12 +256,11 @@ header{
             display: flex;
             justify-self: center;
             align-self: center;
-            position: relative;
-            right: 50px;
+            margin: 50px;
         }
         & #app{
-            height: 300px;
-            width: 170px;
+            height: 600px;
+            width: 320px;
         }
     }
 }
