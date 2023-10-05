@@ -1,0 +1,27 @@
+body{
+    margin: 0px;
+}
+header{
+    background-color: rgb(208, 198, 198);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+
+    & nav{
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;;
+    }
+    & #amazon, #github{
+        height: 50px;
+    }
+    & #linkedin,#certificado{
+        width: 50px;
+        height: 50px;
+    }
+}
