@@ -1,0 +1,28 @@
+#header{
+    background-color: black;
+}
+#menu{
+    background-color: red;
+}
+#hero{
+    background-color: rgb(106, 106, 229);
+}
+#main{
+    background-color: rgb(50, 39, 39);
+}
+#banner{
+    background-color: rgb(235, 216, 11);
+}
+#extra{
+    background-color: rgb(106, 173, 106);
+}
+#image{
+    background-color: rgb(230, 225, 225);
+}
+
+.blanco{
+    color: white;
+}
+.negro{
+    color:black;
+}
