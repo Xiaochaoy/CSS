@@ -1,58 +1,311 @@
-::placeholder{
+::placeholder {
   color: silver;
 }
-html{
-  display: flex;
-  justify-content: center;
+
+.no-borde {
+  border: none;
 }
-.no-borde{
-  border:none;
+
+body {
+  margin: 0px;
+  color: silver;
+  background-color: rgb(235, 232, 232);
 }
-header{
-  width:100vw;
+
+header {
   height: 100px;
-  background-color: rgb(233, 0, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid silver;
+  position: sticky;
+  top: 0px;
+  background-color: white;
 
-  div{
-    width: 992px;
-    height: 100px;
-    background-color: yellow;
+  #primero {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: row;
+
+    #logo {
+      height: 40px;
+    }
+
+    #busqueda {
+      display: flex;
+      border: 1px solid rgb(211, 205, 205);
+
+      input {
+        width: 55vw;
+      }
+
+      input:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    a {
+      margin-left: 10px;
+      text-decoration: none;
+      color: silver;
+    }
+  }
+
+  #segundo {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid silver;
+
+    div {
+      padding: 9px;
+
+      img {
+        height: 20px;
+      }
+    }
   }
 }
-main{
-  width:100vw;
-  height: 100vh;
-  background-color: blue;
+
+#subscribe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid silver;
+  align-items: center;
+  background-color: white;
+
+  b {
+    color: black;
+    margin-right: 2px;
+  }
+
+  input {
+    border: 1px solid rgb(211, 205, 205);
+    height: 20px;
+    margin-left: 10px;
+  }
+
+  button {
+    height: 30px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    margin: 0px 10px;
+  }
+
 }
 
+.close {
+  height: 15px;
+  margin-left: 20px;
+  padding-left: 40px;
+}
 
-// #primero{
-//   display: flex;
-//   align-items: center;
-//   margin: 0px;
-//   padding: 0px;
-  
-//   & #logo{
-//     height: 40px;
-//   }
-//   & #busqueda{
-//     display: flex;
-//     border: 1px solid rgb(211, 205, 205);
+#contexto {
+  display: flex;
+  flex-direction: row;
+  #left, #right{
+    display: flex;
+    flex-direction: column;
+  }
+  #popular,
+  #today {
+    background-color: white;
+    width: 53vw;
+  }
+
+  .cabeza {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    h2 {
+      font-size: 15px;
+      color: black;
+    }
+    > div{
+      font-size: 10px;
+      display: flex;
+      flex-direction: row;
     
-//     & input{
-//       width: 55vw;
-//     }
-//     & input:focus{
-//       outline: none;
-//       box-shadow: none;
-//     }
-//   }
-//   & a{
-//     margin-left: 10px;
-//     text-decoration: none;
-//     color: silver;
-//   }
-// }
+      p{
+        margin-left: 10px;
+      }
+      p:first-child{
+        color: black;
+      }
+    }
+  }
+
+  .cuerpo {
+    display: flex;
+    flex-direction: column;
+
+    .c {
+      border-top: 1px solid silver;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-left: 20px;
+      margin-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      h4,
+      .texto>p {
+        margin-top: 2px;
+        margin-bottom: 1px;
+        margin-left: 10px;
+      }
+
+      h4,
+      .vote>p,
+      .like>p:first-child {
+        color: black;
+      }
+
+      .texto {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .click > div{
+        border: none;
+      }
+      .click{
+        width: 100%;
+      }
+      .click,
+      .vote,
+      .comment,
+      .like {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .vote {
+        margin-left: 10px;
+
+        img {
+          height: 20px;
+        }
+      }
+
+      .comment>img {
+        height: 10px;
+      }
+    }
+
+    p {
+      font-size: 10px;
+    }
+
+    .click {
+      margin-top: 10px;
+
+      div {
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        border: 1px solid silver;
+        padding: 5px;
+        height: 5px;
+      }
+    }
+
+    .like {
+      align-self: flex-end;
+
+      p:first-child {
+        background-color: rgb(235, 226, 226);
+        padding: 5px;
+      }
+
+      p:last-child {
+        align-self: center;
+        margin-left: 5px;
+      }
+    }
+
+    #chanllenge,
+    #chanllenge2 {
+      border: none;
+    }
+
+    #show-more {
+      display: flex;
+      display: row;
+      justify-content: center;
+
+      img {
+        height: 10px;
+        align-self: center;
+        margin-right: 5px;
+      }
+    }
+
+  }
+}
+
+#today .cuerpo img {
+  height: 70px;
+}
+
+#slack, #chat, #tweets{
+  background-color: white;
+  width: 20vw;
+  margin-left: 22px;
+  margin-bottom: 30px;
+}
+
+#slack{
+  .cabeza{
+    h4{
+      color: black;
+      font-size: 18px;
+    }
+    img{
+      margin:0px;
+    }
+  } 
+}
+
+// XS
+@media (max-width: 600px) {}
+
+// SM
+@media (min-width: 600px) {}
+
+// MD
+@media (min-width: 992px) {}
+
+// LG 
+@media (min-width: 1200px) {
+
+  #popular {
+    margin-left: 150px;
+  }
+
+  #subscribe {
+    margin: 20px 150px;
+  }
+
+  #today {
+    margin-left: 150px;
+    margin-top: 20px;
+  }
+}

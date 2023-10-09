@@ -2,33 +2,260 @@
   color: silver;
 }
 
-html {
-  display: flex;
-  justify-content: center;
-}
-
 .no-borde {
   border: none;
 }
 
+body {
+  margin: 0px;
+  color: silver;
+  background-color: rgb(235, 232, 232);
+}
+
 header {
-  width: 100vw;
   height: 100px;
-  background-color: rgb(233, 0, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid silver;
+  position: sticky;
+  top: 0px;
+  background-color: white;
 }
-header div {
-  width: 992px;
-  height: 100px;
-  background-color: yellow;
+header #primero {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  flex-direction: row;
+}
+header #primero #logo {
+  height: 40px;
+}
+header #primero #busqueda {
+  display: flex;
+  border: 1px solid rgb(211, 205, 205);
+}
+header #primero #busqueda input {
+  width: 55vw;
+}
+header #primero #busqueda input:focus {
+  outline: none;
+  box-shadow: none;
+}
+header #primero a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: silver;
+}
+header #segundo {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid silver;
+}
+header #segundo div {
+  padding: 9px;
+}
+header #segundo div img {
+  height: 20px;
 }
 
-main {
-  width: 100vw;
-  height: 100vh;
-  background-color: blue;
+#subscribe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid silver;
+  align-items: center;
+  background-color: white;
+}
+#subscribe b {
+  color: black;
+  margin-right: 2px;
+}
+#subscribe input {
+  border: 1px solid rgb(211, 205, 205);
+  height: 20px;
+  margin-left: 10px;
+}
+#subscribe button {
+  height: 30px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin: 0px 10px;
+}
+
+.close {
+  height: 15px;
+  margin-left: 20px;
+  padding-left: 40px;
+}
+
+#contexto {
+  display: flex;
+  flex-direction: row;
+}
+#contexto #left, #contexto #right {
+  display: flex;
+  flex-direction: column;
+}
+#contexto #popular,
+#contexto #today {
+  background-color: white;
+  width: 53vw;
+}
+#contexto .cabeza {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#contexto .cabeza h2 {
+  font-size: 15px;
+  color: black;
+}
+#contexto .cabeza > div {
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+}
+#contexto .cabeza > div p {
+  margin-left: 10px;
+}
+#contexto .cabeza > div p:first-child {
+  color: black;
+}
+#contexto .cuerpo {
+  display: flex;
+  flex-direction: column;
+}
+#contexto .cuerpo .c {
+  border-top: 1px solid silver;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#contexto .cuerpo .c h4,
+#contexto .cuerpo .c .texto > p {
+  margin-top: 2px;
+  margin-bottom: 1px;
+  margin-left: 10px;
+}
+#contexto .cuerpo .c h4,
+#contexto .cuerpo .c .vote > p,
+#contexto .cuerpo .c .like > p:first-child {
+  color: black;
+}
+#contexto .cuerpo .c .texto {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#contexto .cuerpo .c .click > div {
+  border: none;
+}
+#contexto .cuerpo .c .click {
+  width: 100%;
+}
+#contexto .cuerpo .c .click,
+#contexto .cuerpo .c .vote,
+#contexto .cuerpo .c .comment,
+#contexto .cuerpo .c .like {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#contexto .cuerpo .c .vote {
+  margin-left: 10px;
+}
+#contexto .cuerpo .c .vote img {
+  height: 20px;
+}
+#contexto .cuerpo .c .comment > img {
+  height: 10px;
+}
+#contexto .cuerpo p {
+  font-size: 10px;
+}
+#contexto .cuerpo .click {
+  margin-top: 10px;
+}
+#contexto .cuerpo .click div {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid silver;
+  padding: 5px;
+  height: 5px;
+}
+#contexto .cuerpo .like {
+  align-self: flex-end;
+}
+#contexto .cuerpo .like p:first-child {
+  background-color: rgb(235, 226, 226);
+  padding: 5px;
+}
+#contexto .cuerpo .like p:last-child {
+  align-self: center;
+  margin-left: 5px;
+}
+#contexto .cuerpo #chanllenge,
+#contexto .cuerpo #chanllenge2 {
+  border: none;
+}
+#contexto .cuerpo #show-more {
+  display: flex;
+  display: row;
+  justify-content: center;
+}
+#contexto .cuerpo #show-more img {
+  height: 10px;
+  align-self: center;
+  margin-right: 5px;
+}
+
+#today .cuerpo img {
+  height: 70px;
+}
+
+#slack, #chat, #tweets {
+  background-color: white;
+  width: 20vw;
+  margin-left: 22px;
+  margin-bottom: 30px;
+}
+
+#slack .cabeza h4 {
+  color: black;
+  font-size: 18px;
+}
+#slack .cabeza img {
+  margin: 0px;
+}
+
+@media (min-width: 1200px) {
+  #popular {
+    margin-left: 150px;
+  }
+  #subscribe {
+    margin: 20px 150px;
+  }
+  #today {
+    margin-left: 150px;
+    margin-top: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

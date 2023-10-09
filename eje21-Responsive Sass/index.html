@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
     <title>CSS Lab | Responsive Cloning | Product Hunt</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <!-- <menu id="primero">
+        <menu id="primero">
             <img id="logo" src="./images/logo.png">
             <div id="busqueda">
                 <img class="no-borde" src="./images/search.png" alt="">
@@ -19,22 +21,230 @@
             <a href="">Login</a>
         </menu>
         <menu id="segundo">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </menu> -->
-        <div></div>
-        <div></div>
+            <div>Home</div>
+            <div>Tech</div>
+            <div>Games</div>
+            <div>Podcasts</div>
+            <div>Books</div>
+            <div>Bots</div>
+            <div>Developer Tools</div>
+            <div>iMessage Apps</div>
+            <div>iPhone</div>
+            <div>Photography Tools</div>
+            <div>
+                <img src="./images/arrow-prev.png" alt="">
+                <img src="./images/arrow-next.png" alt="">
+            </div>
+        </menu>
     </header>
-    <main></main>
+    <main>
+        <div id="subscribe">
+            <p>👋<b>Welcome to Product Hunt</b> Get the best new products in your inbox, daily.</p>
+            <input class="no-borde" type="text" placeholder="Your email">
+            <button>subscribe</button>
+            <img class="close" src="./images/close.png" alt="">
+        </div>
+        <div id="contexto">
+            <div id="left">
+                <div id="popular">
+                    <div class="cabeza">
+                        <h2>Popular this week</h2>
+                        <img class="close" src="./images/close.png" alt="">
+                    </div>
+                    <div class="cuerpo">
+                        <div class="c">
+                            <img src="./images/popular-this-week/app-1.png" alt="">
+                            <div class="texto">
+                                <h4>Duolingo Bots</h4>
+                                <p>AI-powered characters to teach language conversation</p>
+                                <div class="click">
+                                    <div>
+                                        <div class="vote">
+                                            <img src="./images/votes.png" alt="">
+                                            <p>1460</p>
+                                        </div>
+                                        <div class="comment">
+                                            <img src="./images/comments.png" alt="">
+                                            <p>49</p>
+                                        </div>
+                                    </div>
+                                    <div class="like" id="like1">
+                                        <p>IPHONE</p>
+                                        <p>+2</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c">
+                            <img src="./images/popular-this-week/app-2.png" alt="">
+                            <div class="texto">
+                                <h4>Tribe 2.0</h4>
+                                <p>Introducing Augmented Messaging</p>
+                                <div class="click">
+                                    <div>
+                                        <div class="vote">
+                                            <img src="./images/votes.png" alt="">
+                                            <p>1465</p>
+                                        </div>
+                                        <div class="comment">
+                                            <img src="./images/comments.png" alt="">
+                                            <p>188</p>
+                                        </div>
+                                        <div id="chanllenge">
+                                            <p>🏆 #1 IN TECH</p>
+                                        </div>
+                                    </div>
+                                    <div class="like" id="like2">
+                                        <p>ANDROID</p>
+                                        <p>+4</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c">
+                            <img src="./images/popular-this-week/app-3.png" alt="">
+                            <div class="texto">
+                                <h4>Workplace by Facebook</h4>
+                                <p>Connect everyone in your company and turn ideads into action</p>
+                                <div class="click">
+                                    <div>
+                                        <div class="vote">
+                                            <img src="./images/votes.png" alt="">
+                                            <p>1003</p>
+                                        </div>
+                                        <div class="comment">
+                                            <img src="./images/comments.png" alt="">
+                                            <p>80</p>
+                                        </div>
+                                    </div>
+                                    <div class="like">
+                                        <p>ANDROID</p>
+                                        <p>+2</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="show-more">
+                            <img src="./images/arrow-down.png" alt="">
+                            <p>SHOW MORE</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="today">
+                    <div class="cabeza">
+                        <h2>Today</h2>
+                        <div>
+                            <p>POPULAR</p>
+                            <p>NEWEST</p>
+                        </div>
+                    </div>
+                    <div class="cuerpo">
+                        <div class="c">
+                            <img src="./images/today/app-1.png" alt="">
+                            <div class="texto">
+                                <h4>Sprayscape</h4>
+                                <p>A perfectly imperfect VR-ish camera experiment, by Google</p>
+                                <div class="click">
+                                    <div>
+                                        <div class="vote">
+                                            <img src="./images/votes.png" alt="">
+                                            <p>82</p>
+                                        </div>
+                                        <div class="comment">
+                                            <img src="./images/comments.png" alt="">
+                                            <p>8</p>
+                                        </div>
+                                        <div id="chanllenge2">
+                                            <p>🏆 #1 IN TECH</p>
+                                        </div>
+                                    </div>
+                                    <div class="like">
+                                        <p>ANDROID</p>
+                                        <p>+3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c">
+                            <img src="./images/today/app-2.png" alt="">
+                            <div class="texto">
+                                <h4>Ask Gary Vee</h4>
+                                <p>The unofficial Gary Vee persona chatbot on Messenger!</p>
+                                <div class="click">
+                                    <div>
+                                        <div class="vote">
+                                            <img src="./images/votes.png" alt="">
+                                            <p>21</p>
+                                        </div>
+                                        <div class="comment">
+                                            <img src="./images/comments.png" alt="">
+                                            <p>9</p>
+                                        </div>
+                                    </div>
+                                    <div class="like">
+                                        <p>GET SHIT DONE</p>
+                                        <p>+1</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c">
+                            <img src="./images/today/app-3.png" alt="">
+                            <div class="texto">
+                                <h4>The Electron Wheel</h4>
+                                <p>Turn your standard bicycle into an electric bike.</p>
+                                <div class="click">
+                                    <div>
+                                        <div class="vote">
+                                            <img src="./images/votes.png" alt="">
+                                            <p>23</p>
+                                        </div>
+                                        <div class="comment">
+                                            <img src="./images/comments.png" alt="">
+                                            <p>2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <div id="slack">
+                    <div class="cabeza">
+                        <h4>Kittybot for Slack.</h4>
+                        <img class="close" src="./images/close.png" alt="">
+                    </div>
+                    <p>A friendly feline that sends you cool new things</p>
+                    <button># ADD KITTYBOT TO SLACK</button>
+                </div>
+                <div id="chat">
+                    <h4>UPCOMING LIVE CHATS</h4>
+                    <div class="contacto">
+                        <img src="" alt="">
+                        <h4>Adam Besvinick</h4>
+                        <p>VC at Deep Fork Capital</p>
+                        <button>REMIND ME</button>
+                    </div>
+                    <p>SEE MORE</p>
+                </div>
+                <div id="tweets">
+                    <div>
+                        <h4>Tweets</h4>
+                        <p>liked by @ProductHuntLOVE</p>
+                    </div>
+                    <div>
+                        <img src="" alt="">
+                        <h4>Max Pelzner</h4>
+                        <p>@WholsMaxPelzner</p>
+                        <p>'Ask @GaryVee' 🎰 is on @ProductHunt! cards.twitter.com/cards/18ce53yr...</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
 </body>
 
 </html>
