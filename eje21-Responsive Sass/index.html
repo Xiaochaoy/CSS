@@ -21,27 +21,31 @@
             <a href="">Login</a>
         </menu>
         <menu id="segundo">
-            <div>Home</div>
-            <div>Tech</div>
-            <div>Games</div>
-            <div>Podcasts</div>
-            <div>Books</div>
-            <div>Bots</div>
-            <div>Developer Tools</div>
-            <div>iMessage Apps</div>
-            <div>iPhone</div>
-            <div>Photography Tools</div>
-            <div>
+            <div id="scroll">
+                <a>Home</a>
+                <a>Tech</a>
+                <a>Games</a>
+                <a>Podcasts</a>
+                <a>Books</a>
+                <a>Bots</a>
+                <a>Developer Tools</a>
+                <a>iMessage Apps</a>
+                <a>iPhone</a>
+                <a>Photography Tools</a>
+            </div>
+            <div id="nonono">
                 <img src="./images/arrow-prev.png" alt="">
                 <img src="./images/arrow-next.png" alt="">
             </div>
         </menu>
     </header>
     <main>
-        <div id="subscribe">
-            <p>👋<b>Welcome to Product Hunt</b> Get the best new products in your inbox, daily.</p>
-            <input class="no-borde" type="text" placeholder="Your email">
-            <button>subscribe</button>
+        <div class="cabeza" id="subscribe">
+            <div>
+                <p>👋<b>Welcome to Product Hunt</b> Get the best new products in your inbox, daily.</p>
+                <input class="no-borde" type="text" placeholder="Your email">
+                <button>SUBSCRIBE</button>
+            </div>
             <img class="close" src="./images/close.png" alt="">
         </div>
         <div id="contexto">
@@ -220,29 +224,75 @@
                     <button># ADD KITTYBOT TO SLACK</button>
                 </div>
                 <div id="chat">
-                    <h4>UPCOMING LIVE CHATS</h4>
+                    <h4 class="cabeza">UPCOMING LIVE CHATS</h4>
                     <div class="contacto">
-                        <img src="" alt="">
-                        <h4>Adam Besvinick</h4>
-                        <p>VC at Deep Fork Capital</p>
-                        <button>REMIND ME</button>
+                        <img src="./images/contacto/adam.webp" alt="">
+                        <div>
+                            <h4>Adam Besvinick</h4>
+                            <p>VC at Deep Fork Capital</p>
+                            <button>REMIND ME</button>
+                        </div>
+                    </div>
+                    <div class="contacto">
+                        <img src="./images/contacto/susan.webp" alt="">
+                        <div>
+                            <h4>Susan David</h4>
+                            <p>Author of Emotionally Guilty</p>
+                            <button>REMIND ME</button>
+                        </div>
+                    </div>
+                    <div class="contacto">
+                        <img src="./images/contacto/avid.jpg" alt="">
+                        <div>
+                            <h4>Avid Larizadeh Duggan</h4>
+                            <p>General Partner at GV</p>
+                            <button>REMIND ME</button>
+                        </div>
+                    </div>
+                    <div class="contacto">
+                        <img src="./images/contacto/katerina.jpg" alt="">
+                        <div>
+                            <h4>Katerina Markov Schneider</h4>
+                            <p>Founder and CEO of Ritual</p>
+                            <button>REMIND ME</button>
+                        </div>
+                    </div>
+                    <div class="contacto">
+                        <img src="./images/contacto/jocelyn.webp" alt="">
+                        <div>
+                            <h4>Jocelyn Glei</h4>
+                            <p>Master of Productivity, founder and author...</p>
+                            <button>REMIND ME</button>
+                        </div>
                     </div>
                     <p>SEE MORE</p>
                 </div>
                 <div id="tweets">
-                    <div>
-                        <h4>Tweets</h4>
-                        <p>liked by @ProductHuntLOVE</p>
+                    <div id="lala">
+                        <p><span class="first-word">Tweets</span> liked by <span class="azul">@ProductHuntLOVE</span>
+                        </p>
                     </div>
-                    <div>
-                        <img src="" alt="">
-                        <h4>Max Pelzner</h4>
-                        <p>@WholsMaxPelzner</p>
-                        <p>'Ask @GaryVee' 🎰 is on @ProductHunt! cards.twitter.com/cards/18ce53yr...</p>
+                    <div class="lele">
+                        <div class="liked-person">
+                            <div class="liked">
+                                <img src="images/max.jpeg" alt="">
+                                <p><b>Max Pelzner</b> <span class="silver">@WholsMaxPelzner</span></p>
+                            </div>
+                            <p>'Ask <span class="azul">@GaryVee</span>' 🎰 is on <span class="azul">@ProductHunt</span>!
+                                <span class="azul">cards.twitter.com/cards/18ce53yr...</span></p>
+                        </div>
+                        <div class="liked-person">
+                            <div class="liked">
+                                <img src="images/max.jpeg" alt="">
+                                <p><b>Max Pelzner</b> <span class="silver">@WholsMaxPelzner</span></p>
+                            </div>
+                            <p>'Ask <span class="azul">@GaryVee</span>' 🎰 is on <span class="azul">@ProductHunt</span>!
+                                <span class="azul">cards.twitter.com/cards/18ce53yr...</span></p>
+                        </div>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </main>
 </body>

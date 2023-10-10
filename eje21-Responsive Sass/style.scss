@@ -37,10 +37,6 @@ header {
       display: flex;
       border: 1px solid rgb(211, 205, 205);
 
-      input {
-        width: 55vw;
-      }
-
       input:focus {
         outline: none;
         box-shadow: none;
@@ -57,13 +53,20 @@ header {
   #segundo {
     display: flex;
     flex-direction: row;
-    border-top: 1px solid silver;
+    justify-content: space-around;
+    #scroll {
+      display: flex;
+      flex-direction: row;
+      border-top: 1px solid silver;
 
-    div {
-      padding: 9px;
-
+      a {
+        padding: 9px;
+      }
+    }
+    #nonono{
       img {
-        height: 20px;
+        height: 15px;
+        padding: 9px;
       }
     }
   }
@@ -72,11 +75,11 @@ header {
 #subscribe {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   border: 1px solid silver;
   align-items: center;
   background-color: white;
-
+  
   b {
     color: black;
     margin-right: 2px;
@@ -98,29 +101,35 @@ header {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-
     margin: 0px 10px;
   }
-
+  div{
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .close {
   height: 15px;
-  margin-left: 20px;
-  padding-left: 40px;
+  margin-left: 30px;
+  margin-right: 10px;
 }
 
 #contexto {
   display: flex;
   flex-direction: row;
-  #left, #right{
+
+  #left,
+  #right {
     display: flex;
     flex-direction: column;
   }
+
   #popular,
   #today {
     background-color: white;
-    width: 53vw;
   }
 
   .cabeza {
@@ -135,15 +144,17 @@ header {
       font-size: 15px;
       color: black;
     }
-    > div{
+
+    >div {
       font-size: 10px;
       display: flex;
       flex-direction: row;
-    
-      p{
+
+      p {
         margin-left: 10px;
       }
-      p:first-child{
+
+      p:first-child {
         color: black;
       }
     }
@@ -182,12 +193,15 @@ header {
         flex-direction: column;
         align-items: flex-start;
       }
-      .click > div{
+
+      .click>div {
         border: none;
       }
-      .click{
+
+      .click {
         width: 100%;
       }
+
       .click,
       .vote,
       .comment,
@@ -224,6 +238,11 @@ header {
         border: 1px solid silver;
         padding: 5px;
         height: 5px;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
       }
     }
 
@@ -233,6 +252,11 @@ header {
       p:first-child {
         background-color: rgb(235, 226, 226);
         padding: 5px;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
       }
 
       p:last-child {
@@ -265,33 +289,274 @@ header {
   height: 70px;
 }
 
-#slack, #chat, #tweets{
+#slack,
+#chat,
+#tweets {
   background-color: white;
   width: 20vw;
   margin-left: 22px;
   margin-bottom: 30px;
 }
 
-#slack{
-  .cabeza{
-    h4{
+#slack {
+  .cabeza {
+    height: 50px;
+
+    h4 {
       color: black;
       font-size: 18px;
     }
-    img{
-      margin:0px;
+
+    img {
+      margin: 0px;
     }
-  } 
+  }
+
+  p {
+    margin-left: 20px;
+    margin-top: 0px;
+  }
+
+  button {
+    margin: 17px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 7px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+  }
+}
+
+#chat {
+  h4 {
+    color: black;
+
+  }
+
+  .contacto:first-of-type {
+    border-top: 1px solid silver;
+    padding-top: 20px;
+  }
+
+  .contacto:last-of-type {
+    border-bottom: 1px solid silver;
+    padding-bottom: 10px;
+  }
+
+  .contacto {
+    display: flex;
+    flex-direction: row;
+    margin-left: 17px;
+    margin-right: 20px;
+
+    img {
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      margin-top: 10px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+        margin-bottom: 0px;
+      }
+
+      h4,
+      p {
+        height: auto;
+        margin-top: 0px;
+        margin-left: 10px;
+        margin-bottom: 2px;
+      }
+
+      button {
+        width: 100px;
+        background-color: white;
+        border: 1px solid silver;
+        margin-left: 10px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  >p {
+    text-align: center;
+    color: red;
+  }
+}
+
+#tweets {
+  .first-word {
+    font-size: 30px;
+  }
+
+  .azul {
+    font-size: 15px;
+    color: blue;
+  }
+
+  color: black;
+
+  div {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  #lala {
+
+    p {
+      font-size: 10px;
+    }
+
+    border-bottom: 1px solid silver;
+  }
+
+  .liked {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+
+    img {
+      height: 50px;
+      margin-top: 10px;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+    p {
+      margin-left: 5px;
+    }
+    .silver{
+      color: rgb(135, 130, 130);
+    }
+  }
+  .liked-person > p{
+    margin-top: 0px;
+  }
+  .lele{
+    margin-left: 0px;
+    height: 136px;
+    overflow-y: auto;
+    overflow-x: clip;
+  }
 }
 
 // XS
 @media (max-width: 600px) {}
 
 // SM
-@media (min-width: 600px) {}
+@media (min-width: 600px) and (max-width: 991.5px) {
+
+  header #segundo{
+    padding-left: 0px;
+    #scroll{
+      width: 80vw;
+      a:nth-last-of-type(1),a:nth-last-of-type(2) ,a:nth-last-of-type(3){
+        display: none;
+      }
+    }
+  }
+  #popular {
+    margin-left: 5%;
+  }
+  #popular, #today{
+    width: 90vw;
+  }
+
+  #subscribe  {
+    margin: 20px 5%;
+    div{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    img{
+      margin-right: 30px;
+      flex-shrink: 0
+    }
+  }
+
+  #today {
+    margin-left: 5%;
+    margin-top: 20px;
+  }
+  #contexto > #right{
+    display: none;
+  }
+  #busqueda{
+    input {
+      width: 70vw;
+    }
+  }
+  #right{
+    visibility: hidden;
+    display: none;
+  }
+}
 
 // MD
-@media (min-width: 992px) {}
+@media (min-width: 992px) and (max-width: 1199.5px) {
+  #segundo {
+    width: 88vw;
+    #scroll{
+      width: 80vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+  #popular {
+    margin-left: 50px;
+  }
+  #popular, #today{
+    width: 90vw;
+  }
+
+  #subscribe {
+    margin: 20px 50px;
+    width: 88vw;
+    padding-left: 20px;
+    div{
+      width: 100%;
+    }
+    img{
+      margin-right: 30px;
+    }
+    input{
+      margin-left: 2px;
+    }
+  }
+
+  #today {
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+  #contexto > #right{
+    display: none;
+  }
+  #busqueda{
+    input {
+      width: 70vw;
+    }
+  }
+}
 
 // LG 
 @media (min-width: 1200px) {
@@ -302,10 +567,26 @@ header {
 
   #subscribe {
     margin: 20px 150px;
+
+  }
+  .cabeza{
+    img{
+      margin-right: 20px;
+    }
   }
 
   #today {
     margin-left: 150px;
     margin-top: 20px;
+  }
+
+  #popular,
+  #today {
+    width: 53vw;
+  }
+  #busqueda{
+    input {
+      width: 55vw;
+    }
   }
 }
