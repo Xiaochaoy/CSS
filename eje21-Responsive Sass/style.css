@@ -388,6 +388,26 @@ header #segundo #nonono img {
   overflow-x: clip;
 }
 
+@media (max-width: 599.5px) {
+  #contexto > #right {
+    display: none;
+  }
+  #primero #busqueda input {
+    width: 70vw;
+  }
+  #subscribe {
+    display: none;
+  }
+  header #segundo {
+    padding-left: 0px;
+  }
+  header #segundo #scroll {
+    width: 80vw;
+  }
+  header #segundo #scroll a:nth-last-of-type(1), header #segundo #scroll a:nth-last-of-type(2), header #segundo #scroll a:nth-last-of-type(3) {
+    display: none;
+  }
+}
 @media (min-width: 600px) and (max-width: 991.5px) {
   header #segundo {
     padding-left: 0px;
@@ -481,6 +501,7 @@ header #segundo #nonono img {
   }
   #subscribe {
     margin: 20px 150px;
+    margin-right: 160px;
   }
   .cabeza img {
     margin-right: 20px;
